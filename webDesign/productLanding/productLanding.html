@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="productLanding.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <div class="logo-container">
+                <img src="https://i.pinimg.com/1200x/91/4f/2b/914f2b97e7ec4bca624550698536dea5.jpg" alt="logo" id="header-img">
+                <span class="product">Chopsticks</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#audio" class="nav-link">How it works</a></li>
+                <li><a href="#for_sale" class="nav-link">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+   <section id="email-section">
+        <h2>Master grabbing the chopsticks</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input name="email" type="email" id="email" placeholder="enter your email here" required>
+            <input id="submit" type="submit" value="Get Started" class="btn">
+        </form>
+   </section>
+
+    <section id="features">
+        <div class="feature">
+            <i class="ri-bowl-fill ri-4x icon"></i>
+            <div>
+                <h2>Premium Materials</h2>
+                <p>Our chopsticks are crafted from the finest, locally sourced bamboo, ensuring exceptional durability and a long-lasting product.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <i class="ri-truck-fill ri-4x icon"></i>
+            <div>
+                <h2>Fast Shipping</h2>
+                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <i class="ri-magic-fill ri-4x icon"></i>
+            <div>
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+            </div>
+        </div>
+    </section>
+    <section id="audio">
+        <iframe 
+            id="video" 
+            height="515" 
+            src="https://www.youtube.com/embed/dW0Js2QpTPc?si=MTVE8q8zz5zMrEKH" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen
+        ></iframe>
+    </section>
+    <section id="for_sale">
+        <h2>For Sale</h2>
+        <div class="product-cards">
+            <div class="card">
+                <div class="product-image product1"></div>
+                <div class="inner-card">
+                    <div class="author">For Children</div>
+                    <h1>Chopsticks 8"</h1>
+                    <p class="content">Bamboo chopsticks for kids 20cm</p>
+                    <div class="flex">
+                        <p class="main-price">$6.50</p>
+                        <p class="old-price">$9.50</p>
+                    </div>
+                    <button class="add">
+                        <p style="margin-left: 5px;">Add to Cart</p>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product-image product2"></div>
+                <div class="inner-card">
+                    <div class="author">For Adult</div>
+                    <h1>Chopsticks 10"</h1>
+                    <p class="content">Bamboo chopsticks for adults 25cm</p>
+                    <div class="flex">
+                        <p class="main-price">$8.50</p>
+                        <p class="old-price">$11.50</p>
+                    </div>
+                    <button class="add">
+                        <p style="margin-left: 5px;">Add to Cart</p>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product-image product3"></div>
+                <div class="inner-card">
+                    <div class="author">For cooking</div>
+                    <h1>Chopsticks 12"</h1>
+                    <p class="content">Bamboo chopsticks for cooking 30cm</p>
+                    <div class="flex">
+                        <p class="main-price">$11.50</p>
+                        <p class="old-price">$14.50</p>
+                    </div>
+                    <button class="add">
+                        <p style="margin-left: 5px;">Add to Cart</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="end">
+            <div class="finalthings">
+                <ul class="tandc">
+                    <li><a href="#features">Privacy</a></li>
+                    <li><a href="#features">Terms</a></li>
+                    <li><a href="#email-section">Contact</a></li>
+                </ul>
+            </div>
+            <div class="cr"><span>Copyright 20XX, Chopsticks</span></div>
+        </div>
+    </footer>
+</body>
+</html>

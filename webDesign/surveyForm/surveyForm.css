@@ -1,0 +1,73 @@
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+h1 {
+    margin-bottom: 0px;
+    font-size: 3rem;
+    border: #f3f3f3;
+}
+p {
+    margin-top: 10px;
+
+}
+body {
+    background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+    color: #f3f3f3;
+    max-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+form {
+    width: 50%;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    background: linear-gradient(135deg, #000000, #4b0000, #8b0000, #d2691e, #ffa500);
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    overflow: hidden;
+}
+.formController {
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0; 
+    padding: 0px; 
+}
+label, input, select {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+}
+.special {
+    margin: 0em;
+}
+button {
+    margin-top: 5px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: inherit;
+}
+button[type="submit"]:hover {
+    cursor: pointer;
+}
+textarea {
+    font-family: inherit;
+}

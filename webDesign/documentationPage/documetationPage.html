@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="documentationPage.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documentation</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>React Documentation</header>
+            <ul id="ul-navbar">
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#Prerequisites">Prerequisites</a></li>
+                <li><a class="nav-link" href="#JavaScript">JavaScript</a></li>
+                <li><a class="nav-link" href="#Your_First_Program">Your First Program</a></li>
+                <li><a class="nav-link" href="#References">References</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>React is a JavaScript library for building user interfaces.</p>
+                <p>It is declarative, component based and you just have to learn it once and would be able to use it anywhere.</p>
+                <pre>
+                    <code>
+                        /* Sample React Code */
+                        import React from 'react';
+                        import ReactDOM from 'react-dom/client';
+                    
+                        function Hello(props) {
+                        return &lt;h1&gt;Hello World!&lt;/h1&gt;;
+                        }
+                    
+                        const container = document.getElementById("root");
+                        const root = ReactDOM.createRoot(container);
+                        root.render(&lt;Hello /&gt;);
+                    </code>
+                </pre>
+            </section>
+            <section class="main-section" id="Prerequisites">
+                <header>Prerequisites</header>
+                <p>The prerequisites section outlines the essential tools and knowledge required before diving into React development and  
+                    which is having a basic understanding of HTML, CSS, and JavaScript, as well as installing Node.js and npm for managing </p>
+                <ol>
+                    <li>Node.js and npm</li>
+                    <pre>
+                        <code>
+                            {/* Sample Node.js Code */}
+                            npm install express react react-dom
+                        </code>
+                    </pre>
+                    <li>Text Editor or IDE</li>
+                    <li>Create React App (optional)</li>
+                    <li>Web Browser</li>
+                    <li>JavaScript and ES6 Knowledge</li>
+                    <pre>
+                        <code>
+                            {/* Sample Node.js Code */}
+                            npm install express react react-dom
+                        </code>
+                    </pre>
+                </ol>
+            </section>
+            <section class="main-section" id="JavaScript">
+                <header>JavaScript</header>
+                <p>This React documentation assumes some familiarity with programming in the JavaScript language.</p>
+                <p>You don't have to be an expert, but it's harder to learn both React and JavaScript at the same time.</p>
+                <p>It's recomended to go through JavaScript first this is how a sample JavaScript looks like.</p>
+                <pre>
+                    <code>
+                    /* This is how JavaScriptcode looks like. */
+                    const cars = ["Saab", "Volvo", "BMW"];
+                    </code>
+                </pre>
+            </section>
+            <section class="main-section" id="Your_First_Program">
+                <header>Your First Program</header>
+                <p>Once you're through with JavaScript you can now go ahead and start writing your first React program.</p>
+                <p>And now you will learn your first React program!</p>
+                <pre>
+                    <code>
+                      {/* Sample React Code */}
+                      import React from 'react';
+                      import ReactDOM from 'react-dom';
+                      function HelloWorld() {
+                        return (
+                          &lt;div&gt;
+                            &lt;h1&gt;Hello World!&lt;/h1&gt;
+                          &lt;/div&gt;
+                        );
+                      }
+                      const container = document.getElementById("root");
+                      ReactDOM.render(&lt;HelloWorld /&gt;, container);
+                    </code>
+                </pre>
+                <p>And thats how you output Hello World! in react.</p>
+            </section>
+            <section class="main-section" id="References">
+                <header>References</header>
+                <p>And finally the References I used to gain my knowledge:</p>
+                <ul>
+                    <li><a href="https://chat.openai.com/">ChatGPT</a>.</li>
+                    <li>You can learn more from the <a href="https://react.dev/">React Official Documentation</a>.</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>

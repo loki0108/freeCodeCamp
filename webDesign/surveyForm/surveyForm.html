@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="surveyForm.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Le Cinéma et Le Théâtre</h1>
+        <p id="description">An insight into the movie goers, how do you prefer watching movies?</p>
+        <form action="" id="survey-form">
+                <div class="formController">
+                    <label for="name" id="name-label">Name </label>
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="formController">
+                    <label for="email" id="email-label">Email </label>
+                    <input id="email" type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="formController">
+                    <label for="number" id="number-label">Age (optional) </label>
+                    <input id="number" type="number" placeholder="Enter your age" min="10" max="99">
+                </div>
+                <div class="formController">
+                    <label for="dropdown">How do you prefer going to movies?</label>
+                    <select id="dropdown" required>
+                        <option disabled>Select an option</option>
+                        <option value="1">Alone</option>
+                        <option value="2">w/ family</option>
+                        <option value="3">w/ friends</option>
+                        <option value="4">Dont go to theatres</option>
+                    </select>
+                </div>
+                <div class="formController">
+                    <label for="radios"> Do you go to theatres to watch Art movies?</label>
+                    <label class="special" for="radios"><input id="radios" type="radio" name="art" value="Yes" checked>Yes</label>
+                    <label class="special" for="radios"><input id="radios" type="radio" name="art" value="No">No</label>
+                </div>
+                <div class="formController">
+                    <label class="special" for="checkbox">Your go-to genre in the following: </label>
+                    <label class="special" for="checkbox"><input class="inline" id="checkbox" type="checkbox" value="Action">Action</label>
+                    <label class="special" for="checkbox"><input class="inline" id="checkbox" type="checkbox" value="Animated">Animated</label>
+                    <label class="special" for="checkbox"><input class="inline" id="checkbox" type="checkbox" value="Art">Art</label>
+                    <label class="special" for="checkbox"><input class="inline" id="checkbox" type="checkbox" value="Horror">Horror</label>
+                    <label class="special" for="checkbox"><input class="inline" id="checkbox" type="checkbox" value="Sci-fi">Sci-fi</label>
+                </div>
+                <div class="formController">
+                    <label for="textarea">Additional Comments: </label>
+                    <textarea id="textarea" id="" cols="40" rows="5" placeholder="Any comments..."></textarea>
+                </div>
+                <button type="submit" id="submit">Submit</button>
+        </form>
+    </body>
+</html>

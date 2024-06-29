@@ -1,0 +1,241 @@
+:root {
+    --nbcol: #2f2626;
+    --text: hsl(226, 25%, 90%);
+    --bg: hsl(30, 100%, 95%);
+    --brown: hsl(30, 100%, 25%);
+}
+* {
+    margin: 0;
+}
+html, body { 
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--bg);
+    min-width: 300px;
+}
+#header-img {
+    max-width: 60px;
+    object-fit: contain;
+}
+#nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top:0;
+    background-color: var(--nbcol);
+    padding: 10px;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 0 10px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.product {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: 700px;
+    color: white;
+    font-family: 'Dancing Script';
+
+}
+#email-section {
+    margin-top: 130px;
+}
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--brown);
+}
+#submit {
+    background-color: var(--brown);
+    color: white;
+    cursor: pointer;
+}
+section::before{
+    display: block;
+    content: "";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+    pointer-events: none;
+}
+section {
+    margin: 40px 20px;
+    text-align: center;
+}
+h2 {
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+}
+.icon {
+    color: var(--brown);
+    margin-right: 30px;
+}
+#features {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-family: 'Montserrat';
+}
+#video {
+    width: 100%;
+}
+.product-image {
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    border: 1px solid var(--text);
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product1 {
+    background-image: url("https://www.gujaratshopee.com/server/assets/uploads/admin/product_gallery/8-inch-wooden-chop-stick-gallery-0-1633090571-3420.webp");
+}
+.product2{
+    background-image: url("https://assets.ajio.com/medias/sys_master/root/20200912/19sM/5f5bc925f997dd6918baa719/-473Wx593H-410057686-922-MODEL.jpg");
+}
+.product3 {
+    background-image: url("https://cdnimg.webstaurantstore.com/images/products/large/481942/1871629.jpg");
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+.content {
+    font-family: "Montserrat";
+    margin-bottom: 10px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.main-price {
+    margin-right: 20px;
+    font-size: 30px;
+    font-family: "fraunces";
+    color: var(--brown);
+}
+.old-price {
+    text-decoration: line-through;
+    color: grey;
+}
+.author {
+    font-family: 'montserrat';
+    letter-spacing: 5px;
+    color: grey;
+    text-transform: uppercase;
+}
+.header {
+    font-family: "fraunces";
+    margin: 10px 0px;
+}
+.add {
+    background-color: var(--brown);
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    font-family: "montserrat";
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+footer {
+    margin-top: 20px;
+    background-color: rgba(47, 38, 38, 0.3);
+    font-family: 'montserrat';
+    padding: 15px;
+    width: 70%;
+    border: 1px solid none;
+    border-radius: 10px 10px 0 0;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end; 
+    color: gray;
+}
+.tandc {
+    display: flex;
+    justify-content: flex-end; 
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.finalthings ul {
+    list-style: none;
+}
+.finalthings a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (min-width: 600px) {
+    #nav-bar {
+        flex-direction: row;
+    }
+}
+@media only screen and (450px < width < 600px) {
+    .card {
+        font-size: 0.85rem;
+    }
+    .product-image {
+        height: 400px;
+    }
+}
+@media only screen and (450px <= width) {
+    .card {
+        display: flex;
+        max-width: 525px;
+        font-size: 0.85rem;
+    }
+    .inner-card {
+        width: 300px;
+        padding: 20px;
+    }
+    .product-image {
+        width: 400px;
+        border-radius: 10px 0 0 10px;
+    }
+}
+@media only screen and (width >= 1000px) {
+    #video {
+        width: 70%;
+    }
+    .product-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
